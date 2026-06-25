@@ -1,0 +1,7 @@
+5
+hello
+i
+am
+an
+echo
+

@@ -1,0 +1,55 @@
+10
+2 10 3
+10 right
+25 left
+40 left
+1 10 3
+5 left
+6 right
+7 right
+1 10 4
+10 left
+20 left
+11 right
+12 right
+2 10 4
+5 left
+100 left
+6 right
+7 right
+2 10 3
+0 left
+20 left
+5 right
+1 5 5
+1 left
+2 right
+3 left
+4 right
+5 left
+2 7 6
+0 left
+0 right
+1 left
+1 right
+2 left
+2 right
+3 10 6
+0 left
+0 left
+0 left
+10 right
+10 right
+10 right
+1 100 2
+0 left
+1000 right
+2 10 8
+0 left
+1 left
+2 right
+3 right
+4 left
+5 right
+6 left
+7 right

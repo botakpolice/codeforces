@@ -1,0 +1,47 @@
+import java.util.*;
+
+
+class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        // choose a place based on amt of time spent on subway
+        // Tree Re-rooting problem
+        int c = Integer.parseInt(sc.nextLine());
+        for (int tc = 0; tc < c; tc++) {
+            // number of stations
+            int n = Integer.parseInt(sc.nextLine());
+            // the edges between the stations
+            // edge : a, b , t
+            int[][] graph = new int[n + 1][n + 1];
+            for (int i = 1; i < n; i++) {
+                int[] edge = Arrays.stream(sc.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+                int u = edge[0];
+                int v = edge[1];
+                int t = edge[2];
+                graph[u][v] = t;
+                graph[v][u] = t;
+                graph[u].add(new int[]{v , t});
+                graph[v].add(new int[]{u , t});
+            }
+            // the number of stations you want to go regularly
+            
+            int m = Integer.parseInt(sc.nextLine());
+            HashMap<Integer,Integer> ctr = new HashMap<>();
+            for (int i = 0; i < m; i++) {
+                int[] a = Arrays.stream(sc.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+                int j = a[0];
+                int x = a[1];
+                ctr.put(j, ctr.getOrDefault(j, 0) + x);
+            }
+
+            
+
+            int[] totalTime = new int[n];
+            Queue<Integer> q = new LinkedList<>();
+            q.offer(1);
+            HashMap<Integer,Integer> temp = new HashMap<>(ctr);
+
+        }
+    }
+}
